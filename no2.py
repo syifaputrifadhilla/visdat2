@@ -23,7 +23,7 @@ with st.sidebar:
       st.write('Color:', Color)
       st.write("Circle Area:", Circle_area)
 
-Data = pd.read_csv(r"C:\tugas 2 yo\Data tugas visdat 1.csv")
+Data = pd.read_csv("factbook.csv")
 
 fig = px.scatter(data_frame=Data,x=X, y=Y,size =Size,color=Color,log_x=True,log_y=True,size_max=Circle_area)
 
